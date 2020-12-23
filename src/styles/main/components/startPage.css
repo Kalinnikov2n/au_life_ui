@@ -1,0 +1,13 @@
+/* purgecss start ignore */
+.start-page {
+  @apply w-full h-full flex items-center justify-center;
+}
+.start-page__btn {
+  line-height: 24px;
+  @apply p-10 text-24 text-color3 rounded-4 border-1 border-color3  cursor-pointer;
+  @apply outline-none !important;
+  &:active {
+    @apply border-0 bg-color1;
+  }
+}
+/* purgecss end ignore */

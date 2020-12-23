@@ -1,0 +1,5 @@
+/* purgecss start ignore */
+.lobby {
+  @apply flex items-center justify-center w-full h-full text-24 text-color3;
+}
+/* purgecss end ignore */

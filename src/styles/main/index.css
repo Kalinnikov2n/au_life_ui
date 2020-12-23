@@ -6,3 +6,5 @@
 @import 'common/mixins.css';
 @import 'common/fonts.css';
 @import 'components/main.css';
+@import 'components/lobby.css';
+@import 'components/startPage.css';
