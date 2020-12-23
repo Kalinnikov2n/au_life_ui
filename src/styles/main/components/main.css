@@ -1,0 +1,8 @@
+/* purgecss start ignore */
+body,
+html {
+  font-family: 'Ubuntu';
+  @apply h-screen w-screen flex items-center justify-center;
+}
+
+/* purgecss end ignore */

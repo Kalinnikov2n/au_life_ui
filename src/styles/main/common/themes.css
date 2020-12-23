@@ -1,0 +1,14 @@
+/* purgecss start ignore */
+.theme1 {
+  --1: #357efe;
+  --2: #c7dbfe;
+  --3: #072c6f;
+  --4: #ff5d4a;
+  --5: #fee3e0;
+  --6: #77fe98;
+  --7: #dcfee3;
+  --white: rgb(255, 255, 255);
+  --transparent: transparent;
+}
+
+/* purgecss end ignore */

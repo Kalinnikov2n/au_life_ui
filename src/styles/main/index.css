@@ -1,0 +1,8 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'common/vars.css';
+@import 'common/themes.css';
+@import 'common/mixins.css';
+@import 'common/fonts.css';
+@import 'components/main.css';
