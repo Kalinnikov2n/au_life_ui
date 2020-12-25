@@ -1,5 +1,79 @@
 /* purgecss start ignore */
 .lobby {
-  @apply flex items-center justify-center w-full h-full text-24 text-color3;
+  @apply flex flex-col  w-full h-full items-center p-12 relative;
+}
+.lobby-users-list-container {
+  height: 80%;
+  @apply w-full flex;
+}
+.lobby-users-list {
+  @apply flex flex-wrap w-full items-center;
+}
+.lobby-user {
+  @apply flex flex-col w-1/3 items-center;
+}
+.lobby-user-title {
+  @apply flex items-center justify-center w-full text-12 text-color3 py-8;
+}
+.game-settings {
+  height: fit-content;
+  @apply flex w-full rounded-10 border-color3 border-1 justify-between p-8 mb-10;
+}
+.game-settings-info {
+  height: fit-content;
+  @apply flex flex-col text-12 text-color3;
+}
+.game-settings-text {
+  @apply mb-4;
+  &:last-child {
+    @apply mb-0;
+  }
+}
+.game-settings-btn {
+  user-select: none;
+  @apply self-start pl-8 pb-8;
+  svg {
+    @apply w-24 h-24 fill-color3;
+  }
+  &:active {
+    @apply bg-transparent outline-none;
+    svg {
+      @apply fill-color1;
+    }
+  }
+}
+.loby-tools {
+  @apply flex w-full flex-col;
+}
+.loby-start {
+  @apply w-full rounded-10 flex items-center justify-center border-color3 border-1 text-color3 text-14 py-6;
+  &:active {
+    @apply bg-color1 text-white border-color1;
+  }
+}
+.game-settings-form {
+  @apply flex absolute z-full bg-white w-full h-full flex-col p-12;
+}
+.game-settings-element {
+  @apply flex w-full flex-wrap mb-24;
+}
+.game-settings-element-title {
+  @apply w-full text-14 text-color3 mb-8;
+}
+.game-settings-element-input {
+  @apply flex w-full bg-transparent border-color3 border-1 rounded-10 text-color3 text-14 p-10;
+  &::placeholder {
+    @apply text-color3 text-14;
+  }
+}
+
+.game-settings-form-tools {
+  @apply w-full flex;
+}
+.game-settings-form-btn {
+  @apply px-10 py-8 rounded-10 mr-6 border-color3 border-1 text-color3 text-14;
+  &:active {
+    @apply bg-color1 border-color1 text-white;
+  }
 }
 /* purgecss end ignore */

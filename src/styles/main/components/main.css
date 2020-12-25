@@ -4,5 +4,31 @@ html {
   font-family: 'Ubuntu';
   @apply h-screen w-screen flex items-center justify-center;
 }
+button {
+  @apply outline-none !important;
+  -webkit-tap-highlight-color: transparent;
+  /* @apply bg-transparent border-none; */
+}
+input {
+  @apply outline-none !important;
+  /* @apply bg-transparent border-none; */
+}
+#root {
+  @apply flex w-full h-full;
+}
+.main {
+  @apply flex w-full h-full;
+}
+.ScrollbarsCustom-Track,
+.ScrollbarsCustom-TrackY {
+  right: -5px !important;
+  @apply hidden;
+}
+.ScrollbarsCustom-Wrapper {
+  @apply w-full !important;
+}
+.ScrollbarsCustom-Scroller {
+  @apply mr-0 pr-0 !important;
+}
 
 /* purgecss end ignore */

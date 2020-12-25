@@ -1,13 +1,42 @@
 /* purgecss start ignore */
 .start-page {
-  @apply w-full h-full flex items-center justify-center;
+  box-sizing: border-box;
+  @apply w-full h-full flex flex-col  p-12  items-center overflow-hidden;
 }
-.start-page__btn {
-  line-height: 24px;
-  @apply p-10 text-24 text-color3 rounded-4 border-1 border-color3  cursor-pointer;
+.selected-avatar-container {
+  @apply flex min-h-100 w-full items-center justify-center;
+}
+.avatar {
+  object-fit: cover;
+  @apply w-100 h-100;
+}
+.start-page-form {
+  height: fit-content;
+  @apply flex mt-24  items-center w-full;
+}
+.start-page-input {
+  @apply flex items-center rounded-10 border-color3 border-1 text-14 text-color3 p-10 mr-8 w-full;
+  &::placeholder {
+    @apply text-14 text-color3;
+  }
+}
+.start-page-btn {
+  @apply p-10 text-14 text-color3 rounded-10 border-1 border-color3  cursor-pointer;
   @apply outline-none !important;
   &:active {
-    @apply border-0 bg-color1;
+    @apply border-1 border-color1 bg-color1;
+  }
+}
+.start-page-img-selector {
+  @apply flex mt-12 w-full h-full z-full;
+}
+.start-page-img-list {
+  @apply flex w-full flex-wrap  items-center h-full;
+}
+.avatar-container {
+  @apply flex items-center justify-center p-12 w-1/3 border-1 border-transparent rounded-10;
+  &.avatar-container_is-selected-true {
+    @apply border-color3;
   }
 }
 /* purgecss end ignore */

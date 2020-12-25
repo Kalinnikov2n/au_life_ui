@@ -6159,48 +6159,339 @@ body, html {
   width: 100vw;
 }
 
+button {
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
+  -webkit-tap-highlight-color: transparent;
+  /* @apply bg-transparent border-none; */
+}
+
+input {
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
+  /* @apply bg-transparent border-none; */
+}
+
+#root {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.ScrollbarsCustom-Track,
+.ScrollbarsCustom-TrackY {
+  right: -5px !important;
+}
+
+.ScrollbarsCustom-Track, .ScrollbarsCustom-TrackY {
+  display: none;
+}
+
+.ScrollbarsCustom-Wrapper {
+  width: 100% !important;
+}
+
+.ScrollbarsCustom-Scroller {
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+}
+
 /* purgecss end ignore */
 
 /* purgecss start ignore */
 
 .lobby {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 0.75rem;
+  position: relative;
+  width: 100%;
+}
+
+.lobby-users-list-container {
+  height: 80%;
+  display: flex;
+  width: 100%;
+}
+
+.lobby-users-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.lobby-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.33333%;
+}
+
+.lobby-user-title {
+  display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  font-size: 1.5rem;
+  font-size: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   color: var(--3);
   width: 100%;
 }
+
+.game-settings {
+  height: fit-content;
+  border-color: var(--3);
+  border-radius: 0.625rem;
+  border-width: 0.0625rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.625rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.game-settings-info {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  color: var(--3);
+}
+
+.game-settings-text {
+  margin-bottom: 0.25rem;
+}
+
+.game-settings-text:last-child {
+    margin-bottom: 0;
+  }
+
+.game-settings-btn {
+  user-select: none;
+  align-self: flex-start;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.game-settings-btn svg {
+    height: 1.5rem;
+    fill: var(--3);
+    width: 1.5rem;
+  }
+
+.game-settings-btn:active {
+    background-color: var(--transparent);
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+
+.game-settings-btn:active svg {
+      fill: var(--1);
+    }
+
+.loby-tools {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.loby-start {
+  border-color: var(--3);
+  border-radius: 0.625rem;
+  border-width: 0.0625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  color: var(--3);
+  width: 100%;
+}
+
+.loby-start:active {
+    background-color: var(--1);
+    border-color: var(--1);
+    color: var(--white);
+  }
+
+.game-settings-form {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0.75rem;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+.game-settings-element {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.game-settings-element-title {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  color: var(--3);
+  width: 100%;
+}
+
+.game-settings-element-input {
+  background-color: var(--transparent);
+  border-color: var(--3);
+  border-radius: 0.625rem;
+  border-width: 0.0625rem;
+  display: flex;
+  font-size: 0.875rem;
+  padding: 0.625rem;
+  color: var(--3);
+  width: 100%;
+}
+
+.game-settings-element-input::placeholder {
+    font-size: 0.875rem;
+    color: var(--3);
+  }
+
+.game-settings-form-tools {
+  display: flex;
+  width: 100%;
+}
+
+.game-settings-form-btn {
+  border-color: var(--3);
+  border-radius: 0.625rem;
+  border-width: 0.0625rem;
+  font-size: 0.875rem;
+  margin-right: 0.375rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  color: var(--3);
+}
+
+.game-settings-form-btn:active {
+    background-color: var(--1);
+    border-color: var(--1);
+    color: var(--white);
+  }
 
 /* purgecss end ignore */
 
 /* purgecss start ignore */
 
 .start-page {
+  box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 100%;
+  overflow: hidden;
+  padding: 0.75rem;
   width: 100%;
 }
 
-.start-page__btn {
-  line-height: 24px;
+.selected-avatar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 6.25rem;
+  width: 100%;
+}
+
+.avatar {
+  object-fit: cover;
+  height: 6.25rem;
+  width: 6.25rem;
+}
+
+.start-page-form {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.start-page-input {
   border-color: var(--3);
-  border-radius: 0.25rem;
+  border-radius: 0.625rem;
+  border-width: 0.0625rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  margin-right: 0.5rem;
+  padding: 0.625rem;
+  color: var(--3);
+  width: 100%;
+}
+
+.start-page-input::placeholder {
+    font-size: 0.875rem;
+    color: var(--3);
+  }
+
+.start-page-btn {
+  border-color: var(--3);
+  border-radius: 0.625rem;
   border-width: 0.0625rem;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 0.875rem;
   padding: 0.625rem;
   color: var(--3);
   outline: 2px solid transparent !important;
   outline-offset: 2px !important;
 }
 
-.start-page__btn:active {
+.start-page-btn:active {
     background-color: var(--1);
-    border-width: 0;
+    border-color: var(--1);
+    border-width: 0.0625rem;
+  }
+
+.start-page-img-selector {
+  display: flex;
+  height: 100%;
+  margin-top: 0.75rem;
+  width: 100%;
+  z-index: 100;
+}
+
+.start-page-img-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.avatar-container {
+  border-color: var(--transparent);
+  border-radius: 0.625rem;
+  border-width: 0.0625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  width: 33.33333%;
+}
+
+.avatar-container.avatar-container_is-selected-true {
+    border-color: var(--3);
   }
 
 /* purgecss end ignore */
